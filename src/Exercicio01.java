@@ -1,6 +1,7 @@
 void main() {
     // mensagem();
-    areaQuadrado();
+    // areaQuadrado();
+    areaRetangulo();
 }
 
 /**
@@ -20,7 +21,7 @@ public static void mensagem() {
 }
 
 /**
- * Escreva um código que receba o tamanho do lado de um quadrado, calcule sua área e exiba na tela
+ * 2. Escreva um código que receba o tamanho do lado de um quadrado, calcule sua área e exiba na tela
  */
 public static void areaQuadrado() {
     Scanner scanner = new Scanner(System.in);
@@ -30,4 +31,20 @@ public static void areaQuadrado() {
     int area = size * size;
 
     System.out.printf("A área do quadrado é %s", area);
+}
+
+/**
+ * 3. Escreva um código que receba a base e a alturade um retângulo, calcule sua área e exiba na tela
+ */
+public static void areaRetangulo() {
+    Scanner scanner = new Scanner(System.in);
+
+    IO.print("Digite a base do retângulo: ");
+    byte base = scanner.nextByte();
+
+    IO.print("Digite a altura do retângulo: ");
+    byte heigth = scanner.nextByte();
+
+    int area = base * heigth;
+    System.out.printf("A área do retângulo é: %s", area);
 }
