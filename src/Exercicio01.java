@@ -72,5 +72,5 @@ public static void ageDiff() {
 
     int _ageDiff = Math.abs(age1 - age2);
 
-    System.out.printf("A diferença de idade entre %s e %s é de %s", name1, name2, _ageDiff);
+    System.out.printf("A diferença de idade entre %s e %s é de %s anos", name1, name2, _ageDiff);
 }
