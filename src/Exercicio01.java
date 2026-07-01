@@ -1,5 +1,6 @@
 void main() {
-    mensagem();
+    // mensagem();
+    areaQuadrado();
 }
 
 /**
@@ -16,4 +17,17 @@ public static void mensagem() {
     byte age = scanner.nextByte();
 
     System.out.printf("Olá %s você tem %s anos", name, age);
+}
+
+/**
+ * Escreva um código que receba o tamanho do lado de um quadrado, calcule sua área e exiba na tela
+ */
+public static void areaQuadrado() {
+    Scanner scanner = new Scanner(System.in);
+
+    IO.print("Digite o tamanho de um lado do quadrado: ");
+    byte size = scanner.nextByte();
+    int area = size * size;
+
+    System.out.printf("A área do quadrado é %s", area);
 }
