@@ -1,7 +1,10 @@
 void main() {
+    // descomente para testar cada método
+
     // mensagem();
     // areaQuadrado();
-    areaRetangulo();
+    // areaRetangulo();
+    ageDiff();
 }
 
 /**
@@ -47,4 +50,27 @@ public static void areaRetangulo() {
 
     int area = base * heigth;
     System.out.printf("A área do retângulo é: %s", area);
+}
+
+/**
+ * 4. Escreva um código que receba o nome e a idade de 2 pessoas e imprima a diferença de idade entre elas
+ */
+public static void ageDiff() {
+    Scanner scanner = new Scanner(System.in);
+
+    IO.print("Digite um nome: ");
+    String name1 = scanner.next();
+
+    IO.print("Digite a idade: ");
+    byte age1 = scanner.nextByte();
+
+    IO.print("Digite outro nome: ");
+    String name2 = scanner.next();
+
+    IO.print("Digite outra idade: ");
+    byte age2 = scanner.nextByte();
+
+    int _ageDiff = Math.abs(age1 - age2);
+
+    System.out.printf("A diferença de idade entre %s e %s é de %s", name1, name2, _ageDiff);
 }
