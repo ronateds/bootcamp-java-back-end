@@ -5,10 +5,10 @@
 void main() {
     Scanner scanner = new Scanner(System.in);
 
-    IO.println("Digite o seu nome: ");
+    System.out.print("Digite o seu nome: ");
     String name = scanner.next();
 
-    IO.println("Digite sua idade: ");
+    System.out.print("Digite sua idade: ");
     byte age = scanner.nextByte();
 
     System.out.printf("Olá %s você tem %s anos", name, age);
