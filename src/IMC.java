@@ -9,7 +9,7 @@ void main() {
 
     float imc = peso/(altura * altura);
 
-    String msg = "";
+    String msg;
     if(imc <= 18.5) {
         msg = "Abaixo do peso";
     } else if (imc <= 24.9) {
